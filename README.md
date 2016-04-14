@@ -6,15 +6,16 @@ Media Storage Service
 To install dependencies create a virtual environment with virtualenv and install using ```python setup.py install```
 
 Requires a postgres database with appropriate permissions.  Before the app can be tested, the database must be bootstrapped.  In order to do this:
+```
 1.  Install the dependencies as stated above
 2.  Open a python terminal 
 3.  Execute the following code
-```
+
 > from mediastore import db
 > db.create_all()
-```
-4.  This should return without error.  If you log in to the database via psql or another tool, you should see the 3 tables specified in the models.py file, Media, Entity, and Entities
 
+4.  This should return without error.  If you log in to the database via psql or another tool, you should see the 3 tables specified in the models.py file, Media, Entity, and Entities
+```
 
 ## Required ENV variables
 DATABASE_STRING -> postgres connection string
